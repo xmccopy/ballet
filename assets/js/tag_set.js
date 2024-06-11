@@ -1,11 +1,16 @@
-//https://www.101computing.net/creating-tabs-in-html-css-js/
+const tabs = document.querySelectorAll('[data-tab-target]')
+const tabContents = document.querySelectorAll('[data-tab-content]')
 
-function selectTab(tabIndex) {
-    //Hide All Tabs
-    document.getElementById('tab1Content').style.display = "none";
-    document.getElementById('tab2Content').style.display = "none";
-    document.getElementById('tab3Content').style.display = "none";
-
-    //Show the Selected Tab
-    document.getElementById('tab' + tabIndex + 'Content').style.display = "block";
-}
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.tabTarget)
+        tabContents.forEach(tabContent => {
+            tabContent.classList.remove('active')
+        })
+        tabs.forEach(tab => {
+            tab.classList.remove('active')
+        })
+        tab.classList.add('active')
+        target.classList.add('active')
+    })
+})

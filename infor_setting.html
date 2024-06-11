@@ -58,16 +58,16 @@
             <div class="all_search">
                 <div class="container">
                     <div class="tabs">
-                        <div id="tab1" onClick="JavaScript:selectTab(1);" class="tab_rad">プロフィール編集</div>
-                        <div id="tab2" onClick="JavaScript:selectTab(2);" class="tab_rad">投稿一覧</div>
-                        <div id="tab3" onClick="JavaScript:selectTab(3);" class="tab_rad1">お気に入り商品一覧</div>
+                        <div data-tab-target="#tab1Content" class="active tab_rad tab1">プロフィール編集</div>
+                        <div data-tab-target="#tab2Content" class="tab_rad tab2">投稿一覧</div>
+                        <div data-tab-target="#tab3Content" class="tab_rad1 tab3">お気に入り商品一覧</div>
                     </div>
                     <!-- <div class="line_set">
                         <div class="bottom_line"></div>/>
                     </div> -->
-                    <div id="tab2Content">
+                    <div id="tab2Content" data-tab-content class="tab2Content">
                         <div class="set_search_1">
-                            <div class="setsearch_1">
+                            <div class="setsearch_1 wow fadeInUp">
                                 <div class="setsearch_1_setmodal">
                                     <div class="user">
                                         <div class="user_avatar">
@@ -352,7 +352,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="setsearch_1">
+                            <div class="setsearch_1 wow fadeInUp">
                                 <div class="setsearch_1_setmodal">
                                     <div class="user">
                                         <div class="user_avatar">
@@ -637,7 +637,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="setsearch_1">
+                            <div class="setsearch_1 wow fadeInUp">
                                 <div class="setsearch_1_setmodal">
                                     <div class="user">
                                         <div class="user_avatar">
@@ -923,7 +923,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="read_more">
+                        <div class="read_more wow fadeInUp">
                             <div class="btn">
                                 <img src="./assets/img/arrow.png" alt="" class="btn_arrow_rotate">
                                 <p class="btn__title">
@@ -938,8 +938,8 @@
                             </div>
                         </div>
                     </div>
-                    <div id="tab3Content">
-                        <div class="set_search_2">
+                    <div id="tab3Content" data-tab-content class="tab3Content">
+                        <div class="set_search_2 wow fadeInUp">
                             <div class="set_search_2_modal">
                                 <div class="user">
                                     <div class="user_avatar">
@@ -1170,7 +1170,7 @@
                             </div>
 
                         </div>
-                        <div class="set_search_2">
+                        <div class="set_search_2 wow fadeInUp">
                             <div class="set_search_2_modal">
                                 <div class="user">
                                     <div class="user_avatar">
@@ -1401,7 +1401,7 @@
                             </div>
 
                         </div>
-                        <div class="set_search_2">
+                        <div class="set_search_2 wow fadeInUp">
                             <div class="set_search_2_modal">
                                 <div class="user">
                                     <div class="user_avatar">
@@ -1632,7 +1632,7 @@
                             </div>
 
                         </div>
-                        <div class="set_search_2">
+                        <div class="set_search_2 wow fadeInUp">
                             <div class="set_search_2_modal">
                                 <div class="user">
                                     <div class="user_avatar">
@@ -1863,7 +1863,7 @@
                             </div>
 
                         </div>
-                        <div class="set_search_2">
+                        <div class="set_search_2 wow fadeInUp">
                             <div class="set_search_2_modal">
                                 <div class="user">
                                     <div class="user_avatar">
@@ -2094,7 +2094,7 @@
                             </div>
 
                         </div>
-                        <div class="read_more">
+                        <div class="read_more wow fadeInUp">
                             <div class="btn">
                                 <img src="./assets/img/arrow.png" alt="" class="btn_arrow_rotate">
                                 <p class="btn__title">
@@ -2109,33 +2109,33 @@
                             </div>
                         </div>
                     </div>
-                    <div id="tab1Content">
+                    <div id="tab1Content" data-tab-content class="active tab1Content">
                         <section class="my_infor_sp login_tab">
                             <div class="my_infor_sp_wrap">
                                 <div class="des_sp">
-                                    <div class="part1">
+                                    <div class="part1 wow fadeInUp">
                                         <p class="part1_tlt">メールアドレス</p>
                                         <input type="text" class="part1_in_put">
                                     </div>
-                                    <div class="part1">
+                                    <div class="part1 wow fadeInUp">
                                         <p class="part1_tlt">メールアドレス<span class="sub">(確認用）</span></p>
                                         <input type="text" class="part1_in_put">
                                     </div>
-                                    <div class="part1">
+                                    <div class="part1 wow fadeInUp">
                                         <p class="part1_tlt">パスワード</p>
                                         <input type="password" id="pass" name="password" maxlength="8" required
                                             class="part1_in_put">
                                     </div>
-                                    <div class="part1">
+                                    <div class="part1 wow fadeInUp">
                                         <p class="part1_tlt">パスワード<span class="sub">(確認用）</span></p>
                                         <input type="password" id="pass" name="password" maxlength="8" required
                                             class="part1_in_put">
                                     </div>
-                                    <div class="part1">
+                                    <div class="part1 wow fadeInUp">
                                         <p class="part1_tlt">表示ニックネーム</p>
                                         <input type="text" class="part1_in_put">
                                     </div>
-                                    <div class="part1">
+                                    <div class="part1 wow fadeInUp">
                                         <p class="part1_tlt">年 齢</p>
                                         <div class="part1_all_radio">
                                             <div class="sp_radio">
@@ -2152,7 +2152,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="part1">
+                                    <div class="part1 wow fadeInUp">
                                         <p class="part1_tlt">性 別</p>
                                         <div class="part1_all_radio">
                                             <div class="sp_radio">
@@ -2170,11 +2170,11 @@
                                         </div>
 
                                     </div>
-                                    <div class="part1">
+                                    <div class="part1 wow fadeInUp">
                                         <p class="part1_tlt">バレエ歴</p>
                                         <input type="text" class="part1_in_put">
                                     </div>
-                                    <div class="part1">
+                                    <div class="part1 wow fadeInUp">
                                         <p class="part1_tlt">バレエのレベル<img src="./assets/img/question.png" alt=""
                                                 class="que_sym"></p>
                                         <div class="part1_all_radio">
@@ -2198,7 +2198,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="part1">
+                                    <div class="part1 wow fadeInUp">
                                         <p class="part1_tlt">足の形<img src="./assets/img/question.png" alt=""
                                                 class="que_sym"></p>
                                         <div class="part1_all_radio">
@@ -2216,11 +2216,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="part1">
+                                    <div class="part1 wow fadeInUp">
                                         <p class="part1_tlt">バレエ歴</p>
                                         <input type="text" class="part1_in_put">
                                     </div>
-                                    <div class="part1">
+                                    <div class="part1 wow fadeInUp">
                                         <p class="part1_tlt">足 幅</p>
                                         <div class="part1_all_radio">
                                             <div class="sp_radio">
@@ -2238,7 +2238,7 @@
                                         </div>
 
                                     </div>
-                                    <div class="part1">
+                                    <div class="part1 wow fadeInUp">
                                         <p class="part1_tlt">甲の高さ</p>
                                         <div class="part1_all_radio">
                                             <div class="sp_radio">
@@ -2256,7 +2256,7 @@
                                         </div>
 
                                     </div>
-                                    <div class="part1">
+                                    <div class="part1 wow fadeInUp">
                                         <p class="part1_tlt">メルマガ購読</p>
                                         <div class="part1_all_radio">
                                             <div class="sp_radio">
@@ -2276,7 +2276,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="common_btn">
+                            <div class="common_btn wow fadeInUp">
                                 <div class="sub_btn">
                                     <p class="text">上書き修正</p>
                                 </div>
@@ -2285,29 +2285,29 @@
                         <section class="my_infor_pc login_tab">
                             <div class="my_infor_pc_wrap">
                                 <div class="des_pc">
-                                    <div class="part1">
+                                    <div class="part1 wow fadeInUp">
                                         <p class="part1_tlt">メールアドレス</p>
                                         <input type="text" class="part1_in_put">
                                     </div>
-                                    <div class="part1">
+                                    <div class="part1 wow fadeInUp">
                                         <p class="part1_tlt">メールアドレス<span class="sub">(確認用）</span></p>
                                         <input type="text" class="part1_in_put">
                                     </div>
-                                    <div class="part1">
+                                    <div class="part1 wow fadeInUp">
                                         <p class="part1_tlt">パスワード</p>
                                         <input type="password" id="pass" name="password" maxlength="8" required
                                             class="part1_in_put">
                                     </div>
-                                    <div class="part1">
+                                    <div class="part1 wow fadeInUp">
                                         <p class="part1_tlt">パスワード<span class="sub">(確認用）</span></p>
                                         <input type="password" id="pass" name="password" maxlength="8" required
                                             class="part1_in_put">
                                     </div>
-                                    <div class="part1">
+                                    <div class="part1 wow fadeInUp">
                                         <p class="part1_tlt">表示ニックネーム</p>
                                         <input type="text" class="part1_in_put">
                                     </div>
-                                    <div class="part1">
+                                    <div class="part1 wow fadeInUp">
                                         <p class="part1_tlt">年 齢</p>
 
                                         <div class="part1_all_radio">
@@ -2325,7 +2325,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="part1">
+                                    <div class="part1 wow fadeInUp">
                                         <p class="part1_tlt">性 別</p>
                                         <div class="part1_all_radio">
                                             <div class="sp_radio">
@@ -2343,11 +2343,11 @@
                                         </div>
 
                                     </div>
-                                    <div class="part1">
+                                    <div class="part1 wow fadeInUp">
                                         <p class="part1_tlt">バレエ歴</p>
                                         <input type="text" class="part1_in_put">
                                     </div>
-                                    <div class="part1">
+                                    <div class="part1 wow fadeInUp">
                                         <p class="part1_tlt">バレエのレベル<img src="./assets/img/question.png" alt=""
                                                 class="que_sym"></p>
                                         <div class="part1_all_radio">
@@ -2371,7 +2371,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="part1">
+                                    <div class="part1 wow fadeInUp">
                                         <p class="part1_tlt">足の形<img src="./assets/img/question.png" alt=""
                                                 class="que_sym"></p>
                                         <div class="part1_all_radio">
@@ -2389,11 +2389,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="part1">
+                                    <div class="part1 wow fadeInUp">
                                         <p class="part1_tlt">バレエ歴</p>
                                         <input type="text" class="part1_in_put">
                                     </div>
-                                    <div class="part1">
+                                    <div class="part1 wow fadeInUp">
                                         <p class="part1_tlt">足 幅</p>
                                         <div class="part1_all_radio">
                                             <div class="sp_radio">
@@ -2411,7 +2411,7 @@
                                         </div>
 
                                     </div>
-                                    <div class="part1">
+                                    <div class="part1 wow fadeInUp">
                                         <p class="part1_tlt">甲の高さ</p>
                                         <div class="part1_all_radio">
                                             <div class="sp_radio">
@@ -2429,7 +2429,7 @@
                                         </div>
 
                                     </div>
-                                    <div class="part1">
+                                    <div class="part1 wow fadeInUp">
                                         <p class="part1_tlt">メルマガ購読</p>
                                         <div class="part1_all_radio">
                                             <div class="sp_radio">
@@ -2449,7 +2449,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="common_btn">
+                            <div class="common_btn wow fadeInUp">
                                 <div class="sub_btn">
                                     <p class="text">上書き修正</p>
                                 </div>

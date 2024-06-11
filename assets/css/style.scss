@@ -290,8 +290,8 @@
         justify-content: space-between;
 
         &__shoes {
-          height: 400rem;
-          width: 500rem;
+          height: 480rem;
+          width: 580rem;
           border-radius: 10rem;
           border: 1px solid #ff9293;
 
@@ -1769,9 +1769,9 @@
     }
   }
 
-  #tab1,
-  #tab2,
-  #tab3 {
+  .tab1,
+  .tab2,
+  .tab3 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1791,23 +1791,22 @@
     }
   }
 
-  #tab1:hover,
-  #tab2:hover,
-  #tab3:hover {
+  .tab1:hover,
+  .tab2:hover,
+  .tab3:hover {
     border: 1px #fd9595 solid;
-    color: #fff;
   }
 
-  #tab1:active,
-  #tab2:active,
-  #tab3:active {
+  .tab1.active,
+  .tab2.active,
+  .tab3.active {
     background-color: #fd9595;
     color: #fff;
   }
 
-  #tab1Content,
-  #tab2Content,
-  #tab3Content {
+  .tab1Content,
+  .tab2Content,
+  .tab3Content {
     margin: auto;
     border-top: 5px #FF9293 solid;
     border-left: 2px #FF9293 solid;
@@ -1823,15 +1822,22 @@
     }
   }
 
-  #tab1Content {
+  .tab1Content {
     display: block;
   }
 
-  #tab2Content,
-  #tab3Content {
+  .tab2Content,
+  .tab3Content {
     display: none;
   }
 
+}
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
 }
 
 //ballet_pointe
